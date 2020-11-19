@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Assignment"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select file from Storage"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/uploadPDF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Upload PDF"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/retrievePDF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Retrieve PDF"
+        android:onClick="retrievePDF"
+        android:textColor="@android:color/holo_red_dark"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
